@@ -19,7 +19,7 @@ public class LoginTest{
 
 		// initialize the browser and navigate to URL
 
-		driver = BrowserFactory.init();
+		driver = BrowserFactory.init1();
 	}
 	
 	@Test

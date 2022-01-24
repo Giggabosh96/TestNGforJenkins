@@ -15,7 +15,7 @@ public class TodoListTest {
 	
 	@BeforeClass
 	public void initBrowser() {		
-		driver = BrowserFactory.init();	
+		driver = BrowserFactory.init2();	
 	}	
 	
 	@Test

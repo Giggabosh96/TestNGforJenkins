@@ -9,14 +9,23 @@ public class BrowserFactory {
 
 	static WebDriver driver;
 	
-	public static WebDriver init() {
+	public static WebDriver init1() {
 		System.setProperty("webdriver.chrome.driver","driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		driver.get("https://techfios.com/test/101/index.php#");
 		driver.get("https://techfios.com/billing/?ng=login/");
+		return driver;
+	}
+	
+	public static WebDriver init2() {
+		System.setProperty("webdriver.chrome.driver","driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("https://techfios.com/test/101/index.php#");
 		return driver;
 	}
 	
